@@ -5,5 +5,8 @@
         if (window !== window.top) {
             window.top.location.href = window.location.href;
         }
+           if (self !== top) {
+            top.location = self.location;
+        }
    
 </script>
